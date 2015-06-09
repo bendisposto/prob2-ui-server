@@ -105,7 +105,7 @@
                                   [org.clojure/test.check "0.7.0"]
                                   [com.gfredericks/test.chuck "0.1.16"]
                                   [schema-gen "0.1.4"]]
-                   :resource-paths ["kernel/build/libs/*.jar"]
+                   :resource-paths ["kernel/de.prob2.kernel/build/libs/*.jar"]
                    :source-paths ["env/dev/clj"]
                    :plugins [[lein-figwheel "0.2.5-SNAPSHOT"]
                              [lein-expand-resource-paths "0.0.1"]
