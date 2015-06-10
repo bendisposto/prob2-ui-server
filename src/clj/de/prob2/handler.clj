@@ -4,7 +4,6 @@
             [ring.middleware.defaults :refer [site-defaults wrap-defaults]]
             [ring.util.response :refer [response]]
             [ring.middleware.json :refer [wrap-json-response]]
-            [selmer.parser :refer [render-file]]
             [com.stuartsierra.component :as component]
             [clojure.core.async :as async :refer (<! <!! >! >!! put! chan go go-loop)]
             [prone.middleware :refer [wrap-exceptions]]

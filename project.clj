@@ -8,13 +8,14 @@
 
   :source-paths ["src/clj" "src/cljs"]
 
-  :dependencies [[org.clojure/clojure "1.7.0-beta2" :scope "provided"]
+  :dependencies [[org.clojure/clojure "1.7.0-RC1" :scope "provided"]
                  [ring/ring-json "0.3.1"]
                  [com.stuartsierra/component "0.2.2"]
                  [ring/ring-core "1.3.2"]
                  [ring/ring-servlet "1.3.2"]
                  [ring/ring-defaults "0.1.3"]
                  [com.taoensso/sente "1.3.0"]
+                 [instaparse "1.3.6" :scope "provided"]
                  [http-kit "2.1.19"]
                  [prone "0.8.0"]
                  [compojure "1.3.1"]
@@ -24,8 +25,7 @@
                  [org.clojure/test.check "0.7.0"]
                  [schema-gen "0.1.4"]]
 
-  :plugins [
-            [lein-environ "1.0.0"]
+  :plugins [[lein-environ "1.0.0"]
             [com.keminglabs/cljx "0.6.0"]]
 
 
@@ -56,7 +56,6 @@
                                   [org.clojure/test.check "0.7.0"]
                                   [pjstadig/humane-test-output "0.6.0"]
                                   [org.clojure/test.check "0.7.0"]
-                                  [com.gfredericks/test.chuck "0.1.16"]
                                   [schema-gen "0.1.4"]]
                    :resource-paths ["kernel/de.prob2.kernel/build/libs/*.jar"]
                    :source-paths ["env/dev/clj"]
