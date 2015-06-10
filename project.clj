@@ -5,7 +5,8 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
   :repositories [["cobra" "http://cobra.cs.uni-duesseldorf.de/artifactory/repo"]
-                 ["snapshots" {:url "http://cobra.cs.uni-duesseldorf.de/artifactory/libs-snapshot-local/"
+                 ["snapshots" {:id "artifactory" 
+                               :url "http://cobra.cs.uni-duesseldorf.de/artifactory/libs-snapshot-local/"
                                :username "leiningen"
                                :password :env}]]
 
