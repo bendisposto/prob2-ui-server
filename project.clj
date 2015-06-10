@@ -4,7 +4,10 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
-  :repositories [["cobra" "http://cobra.cs.uni-duesseldorf.de/artifactory/repo"]]
+  :repositories [["cobra" "http://cobra.cs.uni-duesseldorf.de/artifactory/repo"]
+                 ["snapshots" {:url "http://cobra.cs.uni-duesseldorf.de/artifactory/libs-snapshot-local/"
+                               :username "leiningen"
+                               :password :env}]]
 
   :source-paths ["src/clj" "src/cljs"]
 
@@ -26,6 +29,7 @@
                  [schema-gen "0.1.4"]]
 
   :plugins [[lein-environ "1.0.0"]
+            [theladders/lein-uberjar-deploy "1.0.0"]
             [com.keminglabs/cljx "0.6.0"]]
 
 
