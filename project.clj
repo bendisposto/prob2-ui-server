@@ -30,7 +30,7 @@
                  [schema-gen "0.1.4"]]
 
   :plugins [[lein-environ "1.0.0"]
-            [theladders/lein-uberjar-deploy "1.0.0"]
+            [lein-deploy-uberjar "2.0.0"]
             [com.keminglabs/cljx "0.6.0"]]
 
 
