@@ -26,7 +26,7 @@
 
   :plugins [
             [lein-environ "1.0.0"]
-            [com.keminglabs/cljx "0.6.0"]
+            [com.keminglabs/cljx "0.6.0"]]
 
 
   ;;  :ring {:handler de.prob2.handler/app
