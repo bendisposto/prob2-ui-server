@@ -27,3 +27,4 @@ src/clj/de/prob2/generated
 ltl_graphdump.pl
 *.cljs#
 .nrepl-history
+prob2.min.css
