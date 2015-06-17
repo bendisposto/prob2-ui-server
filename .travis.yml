@@ -6,8 +6,8 @@ branches:
   - develop
 jdk:
 - oraclejdk7
-after_success: curl -u $FTP_USER:$FTP_PASS --ftp-create-dirs -T target/tmp/de.prob2.jar
-  ftp://cobra.cs.uni-duesseldorf.de/upload/prob2.jar \;
+after_success: curl -u $FTP_USER:$FTP_PASS --ftp-create-dirs -T target/de.prob2.jar
+  ftp://cobra.cs.uni-duesseldorf.de/upload/tmp/prob2.jar \;
 env:
   global:
   - secure: RxhC7iYc1NWp0lKR5UZnWQaOKMZuTrKg1Bu76nqbSi3jMzNdxV+8AOwbbb/++dlvuPmnTAHQFym11Bn1U+OE6y4/GlSoR+TMrlxMfcLvEykojvaklrVr0jGLMu7u/hX/UL/BNBEIqLa2a3nXyBD6Bv5289zoHTdlxltSkwHDlrNXzBtFr/c/HJguiKlE1KwmewXDUFHhwsIT5A0nSWtB4FQatYANf+srLt++j0nXoixVXZZZBsZwOf6alDbAXPSsssekA6k2GljmyTwqnvyJ9SXTKYvf1exSzPUeglD0CWVqJxNbwMgeplQbqQ4BMWvBjMECKFzuDiyfO15sZMJOSFW2vFiq2S6swA+tgk+646Fp/YCuTSK3NxSRmF3naX3ncAHqSi9HrqlD8Pw6HKCmoNzvQJBGjCnKRytaLSXvVWDYp2uK/tHLT635tiEhn08/4oAGIlgDYUr6rD5yBdy/NEgImkzgPMIC/VHF0zBRogcP8xqYyLssGrM9bCOuOtlYAnd8JoawKZMUors/F4VdxYCDKbt+srPesQQ1v7LDlZAo+fsYJ+S8uBSleG7+2v4+rrrgYtK20MvTXjLn6jwks6IU2ME2TfwW6mgECqmO3lx4mAICZFLbwTJ+CNTr1CSc1veQ2ps5ADGeeyKLZqa8ITV1w1RK9Ob+A4xCo06CZdA=
