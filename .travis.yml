@@ -6,7 +6,7 @@ branches:
   - develop
 jdk:
 - oraclejdk7
-after_success: curl -u $FTP_USER:$FTP_PASS --ftp-create-dirs -T target/de.prob2.jar
+after_success: curl -u $FTP_USER:$FTP_PASS --ftp-create-dirs -T target/tmp/de.prob2.jar
   ftp://cobra.cs.uni-duesseldorf.de/upload/prob2.jar \;
 env:
   global:
