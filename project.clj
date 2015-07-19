@@ -60,10 +60,11 @@
                                   [org.clojure/test.check "0.7.0"]
                                   [pjstadig/humane-test-output "0.6.0"]
                                   [org.clojure/test.check "0.7.0"]
+                                  [de.prob2/de.prob2.kernel "2.0.0-milestone-29-SNAPSHOT"]
                                   [schema-gen "0.1.4"]]
-                   :resource-paths ["kernel/de.prob2.kernel/build/libs/*.jar"]
+          ;;         :resource-paths ["kernel/de.prob2.kernel/build/libs/*.jar"]
                    :source-paths ["env/dev/clj"]
-                   :plugins [[lein-expand-resource-paths "0.0.1"]]
+            ;;       :plugins [[lein-expand-resource-paths "0.0.1"]]
 
                    :injections [(require 'pjstadig.humane-test-output)
                                 (pjstadig.humane-test-output/activate!)]
