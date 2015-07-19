@@ -28,3 +28,4 @@ ltl_graphdump.pl
 *.cljs#
 .nrepl-history
 prob2.min.css
+maven_repository

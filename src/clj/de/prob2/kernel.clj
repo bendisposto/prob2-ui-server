@@ -115,7 +115,7 @@
 
 (defn extract-model [model]
   {:dir (.getModelDirPath model)
-   :main-component-name (.getName (.getMainComponent model))
+   ;:main-component-name (.getName (.getMainComponent model))
    :filename (.getAbsolutePath (.getModelFile model))
    :type (kebap-case (class model))
    :dependency-graph (extract-dep-graph model)
@@ -205,9 +205,7 @@
 
 (defn prepare-ui-state-packet [trace-list]
   (let [ms (into #{} (map (fn [t] (.getModel t))) trace-list)
-        models (into {} (map (fn [m]
-                               [(.getId (.getStateSpace m))
-                                (extract-model m)]) ms))
+        models (mapv extract-model ms)
         ts (map prepare-trace trace-list)
         traces (into {} (map (fn [{:keys [trace]}] [(:trace-id trace) trace]) ts))
         states (apply merge (map :states ts))
@@ -287,7 +285,7 @@
   {"parse" (fn [{:keys [animations]} [trace-id formula]]
              (let [trace (.getTrace animations trace-id)
                    model (.getModel trace)
-                   status? (.checkSyntax model formula) 
+                   status? (.checkSyntax model formula)
                    ]
                {:status status?
                 :input formula}))
